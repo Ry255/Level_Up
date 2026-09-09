@@ -22,3 +22,5 @@ function mostrarProductos() {
 }
 
 document.addEventListener('DOMContentLoaded', mostrarProductos);
+
+//Falto agregar comentarios pa no perderse- work in progress
