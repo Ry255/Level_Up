@@ -17,3 +17,8 @@
   -busqueda avanzado
   -mapa de ubicacion de eventos
   -servicio soporte tecnico
+
+ Proyecto desarrollado por:
+ -IGNACIO SANCHEZ GATICA
+ -Cristian Retamales Reyes
+ -CRISTOBAL SANHUEZA FERNANDEZ
