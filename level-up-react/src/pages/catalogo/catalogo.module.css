@@ -1,0 +1,26 @@
+.seccion {
+    background-color: #000000;
+    color: #FFFFFF;
+    min-height: 70vh;
+}
+
+.contenedorCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    max-width: 300px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.imgProducto {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
