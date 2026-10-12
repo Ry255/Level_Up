@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -15,7 +15,6 @@ function Catalogo() {
     const location = useLocation();
 
     useEffect(() => {
-        // Recupera la categoría elegida desde el dropdown del navbar
         if (location.state?.categoria) {
             setCategoria(location.state.categoria);
         }
@@ -31,7 +30,7 @@ function Catalogo() {
             <section className={`${estilos.seccion} py-4`}>
                 <div className="d-flex justify-content-between align-items-center px-4 mb-3">
                     <h2 className="fs-4">
-                        {categoria === "todos" ? "Todos los productos" : `Categoría: ${categoria}`}
+                        {categoria === "todos" ? "Todos los productos" : `CategorÃ­a: ${categoria}`}
                     </h2>
                     {categoria !== "todos" && (
                         <Button variant="outline-success" onClick={() => setCategoria("todos")}>
@@ -42,7 +41,7 @@ function Catalogo() {
 
                 <div className={estilos.contenedorCard}>
                     {lista.length === 0 ? (
-                        <p className="text-center w-100">No hay productos en esta categoría.</p>
+                        <p className="text-center w-100">No hay productos en esta categorÃ­a.</p>
                     ) : (
                         lista.map((producto) => (
                             <Card key={producto.codigo} className={estilos.card}>

@@ -1,4 +1,4 @@
-const productos = [
+﻿const productos = [
     {
         codigo: "JM001",
         categoria: "Juego de Mesa",
@@ -16,7 +16,7 @@ const productos = [
     {
         codigo: "AC001",
         categoria: "Accesorios",
-        nombre: "Controlador Inalámbrico Xbox Series X",
+        nombre: "Controlador InalÃ¡mbrico Xbox Series X",
         precio: "59.990",
         imagen: "img/Controlador.jpg"
     },

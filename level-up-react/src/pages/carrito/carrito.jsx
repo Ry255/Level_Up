@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Table from 'react-bootstrap/Table';
 import App_navbar from '../../components/navbar/navbar';
@@ -6,7 +6,6 @@ import { useCarrito } from '../../context/carritoContext';
 import './carrito.module.css';
 import estilos from './carrito.module.css';
 
-// Convierte "1.299.990" (formato chileno) a 1299990
 function precioANumero(precioTexto) {
     return parseInt(precioTexto.replace(/\./g, ""), 10);
 }
@@ -32,7 +31,7 @@ function Carrito() {
                     <thead>
                         <tr>
                             <th>Producto</th>
-                            <th>Categoría</th>
+                            <th>CategorÃ­a</th>
                             <th>Precio unitario</th>
                             <th>Cantidad</th>
                             <th>Subtotal</th>
@@ -43,7 +42,7 @@ function Carrito() {
                         {carrito.length === 0 ? (
                             <tr>
                                 <td colSpan="6" className="text-center">
-                                    El carrito está vacío
+                                    El carrito estÃ¡ vacÃ­o
                                 </td>
                             </tr>
                         ) : (

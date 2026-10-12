@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+﻿import { createContext, useContext, useEffect, useState } from "react";
 
 const LLAVE = "carrito_shop";
 
@@ -20,7 +20,6 @@ export function CarritoProvider({ children }) {
         localStorage.setItem(LLAVE, JSON.stringify(carrito));
     }, [carrito]);
 
-    // Equivale a guardarProducto() de main.js
     function agregarProducto(producto) {
         setCarrito((lista) => {
             const existente = lista.find((p) => p.codigo === producto.codigo);
@@ -33,7 +32,6 @@ export function CarritoProvider({ children }) {
         });
     }
 
-    // Equivale a cambiarCantidad() de Carrito.js
     function cambiarCantidad(codigo, delta) {
         setCarrito((lista) =>
             lista
@@ -44,7 +42,6 @@ export function CarritoProvider({ children }) {
         );
     }
 
-    // Equivale a eliminarProducto() de Carrito.js
     function eliminarProducto(codigo) {
         setCarrito((lista) => lista.filter((p) => p.codigo !== codigo));
     }
